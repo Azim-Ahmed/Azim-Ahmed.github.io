@@ -17,6 +17,7 @@ export const Route = createFileRoute("/blog/")({
       },
     ],
   }),
+  prerender: true,
 });
 
 function BlogIndex() {
@@ -98,5 +99,3 @@ function BlogIndex() {
     </div>
   );
 }
-
-export const prerender = true;

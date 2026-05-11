@@ -47,6 +47,7 @@ export const Route = createFileRoute("/blog/$slug")({
     </div>
   ),
   component: PostPage,
+  prerender: POSTS.map(post => ({ slug: post.slug })),
 });
 
 function PostPage() {
@@ -156,5 +157,3 @@ function PostPage() {
     </div>
   );
 }
-
-export const prerender = POSTS.map(post => ({ slug: post.slug }));

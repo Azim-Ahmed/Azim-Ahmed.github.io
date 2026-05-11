@@ -12,6 +12,7 @@ export const Route = createFileRoute("/pricing")({
       { name: "description", content: "Simple, transparent pricing for production React Flow templates and node-based UI systems." },
     ],
   }),
+  prerender: true,
 });
 
 const TIERS = [
@@ -103,5 +104,3 @@ function PricingPage() {
     </div>
   );
 }
-
-export const prerender = true;

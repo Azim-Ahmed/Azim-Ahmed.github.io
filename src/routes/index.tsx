@@ -18,6 +18,7 @@ export const Route = createFileRoute("/")({
       },
     ],
   }),
+  prerender: true,
 });
 
 const TEMPLATES = [
@@ -240,5 +241,3 @@ function HomePage() {
     </div>
   );
 }
-
-export const prerender = true;

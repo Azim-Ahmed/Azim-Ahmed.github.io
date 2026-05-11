@@ -110,6 +110,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
   component: RootComponent,
   notFoundComponent: NotFoundComponent,
   errorComponent: ErrorComponent,
+  prerender: true,
 });
 
 function RootShell({ children }: { children: React.ReactNode }) {
@@ -135,5 +136,3 @@ function RootComponent() {
     </QueryClientProvider>
   );
 }
-
-export const prerender = true;

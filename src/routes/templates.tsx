@@ -17,6 +17,7 @@ export const Route = createFileRoute("/templates")({
       },
     ],
   }),
+  prerender: true,
 });
 
 const TEMPLATES = [
@@ -74,5 +75,3 @@ function TemplatesPage() {
     </div>
   );
 }
-
-export const prerender = true;
