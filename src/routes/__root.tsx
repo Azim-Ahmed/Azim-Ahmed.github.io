@@ -135,3 +135,5 @@ function RootComponent() {
     </QueryClientProvider>
   );
 }
+
+export const prerender = true;

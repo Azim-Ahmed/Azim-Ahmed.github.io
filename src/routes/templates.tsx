@@ -74,3 +74,5 @@ function TemplatesPage() {
     </div>
   );
 }
+
+export const prerender = true;

@@ -98,3 +98,5 @@ function BlogIndex() {
     </div>
   );
 }
+
+export const prerender = true;

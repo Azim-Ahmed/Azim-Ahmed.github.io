@@ -103,3 +103,5 @@ function PricingPage() {
     </div>
   );
 }
+
+export const prerender = true;

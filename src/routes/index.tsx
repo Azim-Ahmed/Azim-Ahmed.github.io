@@ -240,3 +240,5 @@ function HomePage() {
     </div>
   );
 }
+
+export const prerender = true;

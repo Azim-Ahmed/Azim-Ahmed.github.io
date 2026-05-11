@@ -156,3 +156,5 @@ function PostPage() {
     </div>
   );
 }
+
+export const prerender = POSTS.map(post => ({ slug: post.slug }));
