@@ -18,7 +18,6 @@ export const Route = createFileRoute("/")({
       },
     ],
   }),
-  prerender: true,
 });
 
 const TEMPLATES = [

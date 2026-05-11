@@ -17,7 +17,6 @@ export const Route = createFileRoute("/blog/")({
       },
     ],
   }),
-  prerender: true,
 });
 
 function BlogIndex() {
