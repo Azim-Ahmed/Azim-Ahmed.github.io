@@ -14,10 +14,15 @@ export const Route = createFileRoute("/blog/$slug")({
   head: ({ loaderData }) => {
     const post = loaderData?.post;
     if (!post) return { meta: [{ title: "Article not found" }] };
+    const keywords = post.tags.join(", ");
     return {
       meta: [
         { title: `${post.title} | VisualFlow Labs` },
         { name: "description", content: post.description },
+        { name: "keywords", content: keywords },
+        { name: "author", content: post.author },
+        { name: "article:published_time", content: post.date },
+        { name: "article:section", content: post.category },
         { property: "og:title", content: post.title },
         { property: "og:description", content: post.description },
         { property: "og:type", content: "article" },
@@ -60,9 +65,11 @@ function PostPage() {
     headline: post.title,
     description: post.description,
     datePublished: post.date,
+    articleSection: post.category,
     author: { "@type": "Organization", name: post.author },
     publisher: { "@type": "Organization", name: SITE.name, url: SITE.url },
     keywords: post.tags.join(", "),
+    mainEntityOfPage: { "@type": "WebPage", "@id": `${SITE.url}/blog/${post.slug}` },
   };
 
   return (

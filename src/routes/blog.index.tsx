@@ -12,8 +12,12 @@ export const Route = createFileRoute("/blog/")({
       { title: "Blog — React Flow, Workflow Builders & Visual SaaS | VisualFlow Labs" },
       {
         name: "description",
+        content: `${POSTS.length} SEO-friendly guides on React Flow: performance, accessibility, TypeScript, ELK layout, collaboration, AI agent graphs, testing, security, and comparisons with GoJS, JointJS, and Mermaid.`,
+      },
+      {
+        name: "keywords",
         content:
-          "Articles on React Flow, node-based UI, visual programming, automation workflows, and SaaS architecture.",
+          "React Flow blog, React Flow tutorial, workflow builder, node editor, xyflow, ELK layout, React Flow accessibility, React Flow performance, visual SaaS",
       },
     ],
   }),
