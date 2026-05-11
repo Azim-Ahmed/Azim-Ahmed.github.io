@@ -188,7 +188,7 @@ function PricingPage() {
                 ))}
               </ul>
               <a
-                href={SITE.visualflowUrl}
+                href={SITE.pricingUrl}
                 target="_blank"
                 rel="noreferrer"
                 className={`mt-8 inline-flex h-11 w-full items-center justify-center rounded-md font-medium text-sm transition ${
